@@ -20,6 +20,7 @@ Prerequisites
 1) Download and install Eclipse. Also install Maven plugin for Eclipse (Download and install latest version of Maven if you wish to run tests using maven command line options)
 2) Download and install latest version of chromedriver.exe for webdriver to run properly if you wish execute tests on chrome browser
 3) Download and install latest version of IEDriverServer.exe for webdriver to run properly if you wish execute tests on IE browser
+4) Download and add FireFox Web Driver Extension version 2.53.1 which is the webdriver implementation for FireFox(Tested on FireFox browser version 45.0.1 with this webdriver. By adding this webdriver, we don't need to specify any path for webdriver.gecko.driver in arguments on command line or eclipse)
 
 Running the tests
 
@@ -27,7 +28,7 @@ Using Eclipse:-
 
 1) Open VerifyEnglishTest.java. Inside the @Managed annotation, put driver name as firefox, chrome or iexplorer based on which browser you want the tests to run on. By default, tests will run on Firefox browser
 2) Right click -> Select 'Run as' -> 'Run Configurations' -> Open 'Arguments' tab -> Provide the following parameters in VM Arguments box :-
-a) For running the tests on Firefox browser -> no arguments need to be specified
+a) For running the tests on Firefox browser -> no arguments need to be specified since Firefox webdriver extension has already been installed
 b) For running the tests on Chrome browser -> Type -Dwebdriver.chrome.driver="C:\drivers\chromedriver.exe". Note that this should be the path where you installed the chromedriver.exe file in previous steps
 b) For running the tests on IE browser -> Type -Dwebdriver.ie.driver="C:\drivers\IEDriverServer.exe". Note that this should be the path where you installed the IEDriverServer.exe file in previous steps
 
