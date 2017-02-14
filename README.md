@@ -42,7 +42,7 @@ Using command Line:-
 3) Type the following commands based on choice of different browsers. Note -> you need to compile the code first whenever you are changing the browser name inside @Managed annotation in code
 a) For Firefox -> 'mvn verify -Dwebdriver.driver=firefox'
 b) For Chrome -> 'mvn verify -Dwebdriver.driver=chrome -Dwebdriver.chrome.driver=C:\drivers\chromedriver.exe' (Give your path where you installed the respective driver)
-c) For Firefox -> 'mvn verify -Dwebdriver.driver=iexploer -Dwebdriver.ie.driver=C:\drivers\IEDriverServer.exe' (Give your path where you installed the respective driver)
+c) For Internet Explorer -> 'mvn verify -Dwebdriver.driver=iexploer -Dwebdriver.ie.driver=C:\drivers\IEDriverServer.exe' (Give your path where you installed the respective driver)
 4) Tests will execute on your choice of browser. Note-> If you don't specify the correct path of respective driver of a browser you have chosen, it will produce an error due to incompatibility of webdriver with certain newer browser versions
 
 Results
